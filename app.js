@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 var login = require('./controllers/login/login');
 
 
-var port=4000;
+var port=process.env.PORT || 4000;
 app.use(bodyParser.urlencoded({ extended: false }));
 //view engine
 
